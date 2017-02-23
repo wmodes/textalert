@@ -50,7 +50,7 @@ STOP                                   # Stop all messages from system
 RESUME                                 # Resume messages from system
 APPROVE [ALL | LAST 2 | 1,2,5-6 ]      # (Mod-only) Approve adds or posts
 REJECT [ALL | LAST 2 | 1,2,3,5-6 ]     # (Mod-only) Reject adds or posts
-MODTALK [<CHANNEL>]                    # Send message to moderators
+TOMODS [<CHANNEL>]                     # Send message to moderators
 LISTMODS [<CHANNEL>]                   # (Mod-only) List mod numbers
 HELP [<CHANNEL>]                       # Get list of commands for channel
 ```
