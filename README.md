@@ -42,18 +42,17 @@ Commands
 As much as possible, system figures out context from last communication with user or mod.
 
 ```
-APPROVE  [ALL | LAST 2 | 1,2,3 ]
-REJECT [ALL | LAST 2 | 1,2,3 ]
-ADD <CHANNEL>
-REMOVE [ME | #########] [<CHANNEL>]
-STOP
-RESUME
-MOD <NUMBER> [<CHANNEL>]
-DEMOD <NUMBER> [<CHANNEL>]
-MODTALK [<CHANNEL>]
-LISTMODS [<CHANNEL>]
-SET <CHANNEL>
-HELP [<CHANNEL>]
+<POST CONTENT>                         # Summit post to channel
+ADD [MOD] [ME | #########] TO <CHANNEL>
+REMOVE [MOD] [ME | #########] FROM [<CHANNEL>]
+SET <CHANNEL>                          # Set channel as context
+STOP                                   # Stop all messages from system
+RESUME                                 # Resume messages from system
+APPROVE [ALL | LAST 2 | 1,2,5-6 ]      # (Mod-only) Approve adds or posts
+REJECT [ALL | LAST 2 | 1,2,3,5-6 ]     # (Mod-only) Reject adds or posts
+MODTALK [<CHANNEL>]                    # Send message to moderators
+LISTMODS [<CHANNEL>]                   # (Mod-only) List mod numbers
+HELP [<CHANNEL>]                       # Get list of commands for channel
 ```
 
 Installation
