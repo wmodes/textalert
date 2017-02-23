@@ -6,13 +6,13 @@ Scenarios
 ---------
 A typical configuration:
 
-#. A group of people need a way to send decentralized up-to-the-second alerts to each other. 
-#. A contact from the group contacts system admins to set up a channel for the campaign.
-#. The contact informs members of the group to text ADD <CHANNELNAME> to the system number
-#. Depending on how the channel is configured, moderators may approve adds or they may be added automatically.
-#. The contact recruits and sets moderators for the channel.
-#. Users may submit posts to the channel.
-#. Depending on how the channel is configured, moderators may APPROVE or REJECT posts.
+1. A group of people need a way to send decentralized up-to-the-second alerts to each other. 
+1. A contact from the group contacts system admins to set up a channel for the campaign.
+1. The contact informs members of the group to text ADD <CHANNELNAME> to the system number
+1. Depending on how the channel is configured, moderators may approve adds or they may be added automatically.
+1. The contact recruits and sets moderators for the channel.
+1. Users may submit posts to the channel.
+1. Depending on how the channel is configured, moderators may APPROVE or REJECT posts.
 
 User Levels
 -----------
