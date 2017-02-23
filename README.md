@@ -2,6 +2,8 @@ textalert
 =========
 A system for creating channels to alert groups of people about community actions via SMS/text. A work in progress at the moment...
 
+**NOTE: STILL UNDER DEVELOPMENT**
+
 Scenarios
 ---------
 A typical configuration:
