@@ -4,6 +4,18 @@ A system for creating channels to alert groups of people about community actions
 
 **NOTE: STILL UNDER DEVELOPMENT**
 
+Philosophy
+----------
+Simple guiding principles for creating this software:
+* We are transparent about the risks and benefits.
+* We are transparent about the system and software, i.e., releasing as open source.
+* We protect users and moderators as much as practical, e.g., encrypting databases (but not messages), store no messages, store no info about users and mods but phone numbers 
+* Use a distributed model or software and moderation
+* Make it as simple as possible for admins.
+* Make it as simple and secure as possible for moderators, e.g., interface completely from mobile devices.
+* Make it as simple and low tech for users, i.e., relying on SMS available to virtually all mobile devices.
+* Server technology independent, i.e., layers of abstraction to use other database tech, SMS gateways, etc.
+
 Scenarios
 ---------
 A typical configuration:
@@ -25,17 +37,24 @@ Here are the levels of user authority:
 * **Contact** - member of the group who may appoint moderators
 * **Admin** - administrators for the system who can set up a channel
 
-Philosophy
-----------
-Simple guiding principles for creating this software:
-* We are transparent about the risks and benefits.
-* We are transparent about the system and software, i.e., releasing as open source.
-* We protect users and moderators as much as practical, e.g., encrypting databases (but not messages), store no messages, store no info about users and mods but phone numbers 
-* Use a distributed model or software and moderation
-* Make it as simple as possible for admins.
-* Make it as simple and secure as possible for moderators, e.g., interface completely from mobile devices.
-* Make it as simple and low tech for users, i.e., relying on SMS available to virtually all mobile devices.
-* Server technology independent, i.e., layers of abstraction to use other database tech, SMS gateways, etc.
+Commands
+--------
+As much as possible, system figures out context from last communication with user or mod.
+
+```
+APPROVE  [ALL | LAST 2 | 1,2,3 ]
+REJECT [ALL | LAST 2 | 1,2,3 ]
+ADD <CHANNEL>
+REMOVE [ME | #########] [<CHANNEL>]
+STOP
+RESUME
+MOD <NUMBER> [<CHANNEL>]
+DEMOD <NUMBER> [<CHANNEL>]
+MODTALK [<CHANNEL>]
+LISTMODS [<CHANNEL>]
+SET <CHANNEL>
+HELP [<CHANNEL>]
+```
 
 Installation
 ------------
